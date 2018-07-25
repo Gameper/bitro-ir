@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: block; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+  padding: 32px 16px 0 16px; }
+
+header {
+  padding: 0 0 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px; }
+
+h1 {
+  font-size: 32px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 20px;
+  font-weight: bold; }
+
+img {
+  border-radius: 5px; }
+
+a {
+  text-decoration: none; }
+
+.main-carousel {
+  display: block; }
+
+.carousel-cell {
+  width: 322px;
+  height: auto;
+  margin-right: 20px;
+  counter-increment: carousel-cell; }
+  .carousel-cell .mini-desc {
+    font-size: 13px;
+    opacity: 0.5;
+    margin-bottom: 8px; }
+
+.img-placeholder {
+  width: 322px;
+  height: 207px; }
+
+.title {
+  font-size: 18px; }
+  .title div {
+    margin-bottom: 5px; }
+  .title .category {
+    font-size: 10px;
+    font-weight: bold;
+    color: blue; }
+  .title .desc {
+    font-size: 0.85em;
+    opacity: 0.5; }
+
+.spacer {
+  margin: 40px 0 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+
+.item-row {
+  display: grid;
+  grid-template-columns: 58px auto auto;
+  padding: 12px 0; }
+  .item-row:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .item-row .item {
+    align-self: center; }
+    .item-row .item:not(:last-child) {
+      margin-right: 8px; }
+    .item-row .item .title {
+      font-size: 0.9em; }
+  .item-row .price {
+    text-align: right;
+    font-size: 0.8em;
+    font-weight: bold; }
+    .item-row .price .btn-buy {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 8px 16px;
+      border-radius: 25px; }

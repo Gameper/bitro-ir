@@ -1,0 +1,10 @@
+@import 'reset';
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  // background: lightgray;
+  overflow-x: hidden;
+  padding: 32px 16px 0 16px;
+}
