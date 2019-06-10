@@ -48,6 +48,4 @@ img {
   box-sizing: border-box; }
 
 body {
-  font-family: sans-serif;
-  overflow-x: hidden;
-  padding: 32px 16px 0 16px; }
+  font-family: sans-serif; }
