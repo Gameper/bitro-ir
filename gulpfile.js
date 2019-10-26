@@ -16,7 +16,6 @@ gulp.task("serve", [ "sass" ], function() {
 });
 
 var processorsArray = [
-  // snipped for brevity
   require("autoprefixer")({ grid: true, browsers: [ "last 2 versions", "ie 10-11", "Firefox > 20" ] })
 ];
 // Compile sass into CSS & auto-inject into browsers
