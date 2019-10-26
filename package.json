@@ -9,10 +9,12 @@
   "author": "Greg Jang",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.7.0",
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
