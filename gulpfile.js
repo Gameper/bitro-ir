@@ -11,8 +11,8 @@ gulp.task('serve', ['sass'], function () {
     server: './app',
   });
 
-  gulp.watch('app/common/scss/*.scss', ['sass']);
-  gulp.watch('app/ch5/popup/**/*.html').on('change', browserSync.reload);
+  gulp.watch('app/scss/*.scss', ['sass']);
+  gulp.watch('app/*.html').on('change', browserSync.reload);
 });
 
 // var processorsArray = [require('autoprefixer')({ grid: true, browsers: ['last 2 versions', 'ie 10-11', 'Firefox > 20'] })];
@@ -20,11 +20,11 @@ gulp.task('serve', ['sass'], function () {
 gulp.task('sass', function () {
   return (
     gulp
-      .src('app/common/scss/*.scss')
+      .src('app/scss/*.scss')
       // .pipe(plumber())
       .pipe(sass())
       .pipe(postcss([autoprefixer()]))
-      .pipe(gulp.dest('app/common/css'))
+      .pipe(gulp.dest('app/css'))
       .pipe(browserSync.stream())
   );
 });
