@@ -21,7 +21,7 @@ gulp.task('sass', function () {
   return (
     gulp
       .src('app/scss/*.scss')
-      // .pipe(plumber())
+      .pipe(plumber())
       .pipe(sass())
       .pipe(postcss([autoprefixer()]))
       .pipe(gulp.dest('app/css'))
