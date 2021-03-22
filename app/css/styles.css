@@ -115,7 +115,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none; }
 
 table {
@@ -124,10 +124,6 @@ table {
 
 img {
   display: block; }
-
-html,
-body {
-  height: 100%; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -146,25 +142,30 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 32px; }
+  @media (max-width: 768px) {
+    body {
+      padding: 90px 72px; } }
 
 .decor1 {
-  position: absolute;
+  position: fixed;
   top: 32px;
   left: 32px;
   width: 100px;
   height: 2px;
-  background-color: white; }
+  background-color: white;
+  opacity: 0.5; }
 
 .decor2 {
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 32px;
   width: 2px;
   height: 100px;
-  background-color: white; }
+  background-color: white;
+  opacity: 0.5; }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   left: 32px;
   display: -webkit-box;
@@ -178,6 +179,9 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 200px; }
+  @media (max-width: 768px) {
+    footer {
+      font-size: 14px; } }
   footer a {
     display: block;
     color: white;
@@ -207,15 +211,30 @@ main {
   display: grid;
   grid-template-columns: 400px 400px;
   gap: 0 68px; }
-  main section h2 {
-    font-size: 28px;
-    font-weight: 100;
-    margin: 40px 0; }
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr; } }
   main section img {
     width: 100%; }
   main .left {
     -ms-flex-item-align: center;
         align-self: center; }
+    @media (max-width: 768px) {
+      main .left {
+        margin-bottom: 50px; } }
+    main .left h2 {
+      font-size: 28px;
+      font-weight: 100;
+      margin: 40px 0; }
+      @media (max-width: 768px) {
+        main .left h2 {
+          font-size: 18px;
+          margin: 32px 0;
+          text-align: center; } }
+    @media (max-width: 768px) {
+      main .left .bitro-logo {
+        width: 80%;
+        margin: 0 auto; } }
   main .app-link {
     display: -webkit-box;
     display: -ms-flexbox;

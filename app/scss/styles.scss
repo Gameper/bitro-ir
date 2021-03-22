@@ -10,34 +10,42 @@ body {
   justify-content: center;
   align-items: center;
   padding: 32px;
+  @media (max-width: 768px) {
+    padding: 90px 72px;
+  }
 }
 
 .decor1 {
-  position: absolute;
+  position: fixed;
   top: 32px;
   left: 32px;
   width: 100px;
   height: 2px;
   background-color: white;
+  opacity: 0.5;
 }
 
 .decor2 {
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 32px;
   width: 2px;
   height: 100px;
   background-color: white;
+  opacity: 0.5;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   left: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 200px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
   a {
     display: block;
     color: white;
@@ -77,18 +85,36 @@ main {
   display: grid;
   grid-template-columns: 400px 400px;
   gap: 0 68px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   section {
-    h2 {
-      font-size: 28px;
-      font-weight: 100;
-      margin: 40px 0;
-    }
     img {
       width: 100%;
     }
   }
   .left {
     align-self: center;
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+      // text-align: center;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: 100;
+      margin: 40px 0;
+      @media (max-width: 768px) {
+        font-size: 18px;
+        margin: 32px 0;
+        text-align: center;
+      }
+    }
+    .bitro-logo {
+      @media (max-width: 768px) {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
   }
   .app-link {
     display: flex;
