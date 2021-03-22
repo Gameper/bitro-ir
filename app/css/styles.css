@@ -1,0 +1,235 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: block; }
+
+html,
+body {
+  height: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  position: relative;
+  font-family: 'NanumSquare', sans-serif;
+  background-color: black;
+  color: white;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px; }
+
+.decor1 {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 100px;
+  height: 2px;
+  background-color: white; }
+
+.decor2 {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  width: 2px;
+  height: 100px;
+  background-color: white; }
+
+footer {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 200px; }
+  footer a {
+    display: block;
+    color: white;
+    text-decoration: none; }
+    footer a.facebook {
+      background: url("../images/ic_facebook.svg") no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px; }
+    footer a.twitter {
+      background: url("../images/ic_twitter.svg") no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px; }
+    footer a.insta {
+      background: url("../images/ic_insta.svg") no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px; }
+    footer a.talk {
+      background: url("../images/ic_talk.svg") no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px; }
+
+main {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  gap: 0 68px; }
+  main section h2 {
+    font-size: 28px;
+    font-weight: 100;
+    margin: 40px 0; }
+  main section img {
+    width: 100%; }
+  main .left {
+    -ms-flex-item-align: center;
+        align-self: center; }
+  main .app-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    main .app-link .ios {
+      display: block;
+      background: url("../images/download-ios.svg") no-repeat;
+      background-size: 120px 40px;
+      width: 120px;
+      height: 40px; }
+    main .app-link .android {
+      display: block;
+      background: url("../images/download-android.svg") no-repeat;
+      background-size: 135px 40px;
+      width: 135px;
+      height: 40px;
+      margin-left: 24px; }

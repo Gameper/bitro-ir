@@ -1,1 +1,111 @@
 @import 'reset';
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body {
+  position: relative;
+  font-family: 'NanumSquare', sans-serif;
+  background-color: black;
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.decor1 {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  width: 100px;
+  height: 2px;
+  background-color: white;
+}
+
+.decor2 {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  width: 2px;
+  height: 100px;
+  background-color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    &.facebook {
+      background: url('../images/ic_facebook.svg') no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    &.twitter {
+      background: url('../images/ic_twitter.svg') no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    &.insta {
+      background: url('../images/ic_insta.svg') no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    &.talk {
+      background: url('../images/ic_talk.svg') no-repeat;
+      background-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+    &.gameper-link {
+      // transform: rotateZ(-90deg);
+    }
+  }
+}
+
+main {
+  // border: 1px solid white;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  gap: 0 68px;
+  section {
+    h2 {
+      font-size: 28px;
+      font-weight: 100;
+      margin: 40px 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .left {
+    align-self: center;
+  }
+  .app-link {
+    display: flex;
+    .ios {
+      display: block;
+      background: url('../images/download-ios.svg') no-repeat;
+      background-size: 120px 40px;
+      width: 120px;
+      height: 40px;
+    }
+    .android {
+      display: block;
+      background: url('../images/download-android.svg') no-repeat;
+      background-size: 135px 40px;
+      width: 135px;
+      height: 40px;
+      margin-left: 24px;
+    }
+  }
+}
