@@ -129,6 +129,14 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+html,
+body {
+  height: 100%; }
+  @media (max-width: 991px) {
+    html,
+    body {
+      height: unset; } }
+
 body {
   position: relative;
   font-family: 'NanumSquare', sans-serif;
@@ -142,9 +150,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 32px; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     body {
-      padding: 90px 72px; } }
+      padding: 70px 72px; } }
 
 .decor1 {
   position: fixed;
@@ -154,6 +162,10 @@ body {
   height: 2px;
   background-color: white;
   opacity: 0.5; }
+  @media (max-width: 991px) {
+    .decor1 {
+      top: 24px;
+      left: 24px; } }
 
 .decor2 {
   position: fixed;
@@ -163,25 +175,20 @@ body {
   height: 100px;
   background-color: white;
   opacity: 0.5; }
+  @media (max-width: 991px) {
+    .decor2 {
+      bottom: 24px;
+      right: 24px; } }
 
 footer {
   position: fixed;
   bottom: 32px;
-  left: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 200px; }
-  @media (max-width: 768px) {
+  left: 32px; }
+  @media (max-width: 991px) {
     footer {
-      font-size: 14px; } }
+      font-size: 14px;
+      bottom: 24px;
+      left: 24px; } }
   footer a {
     display: block;
     color: white;
@@ -190,48 +197,69 @@ footer {
       background: url("../images/ic_facebook.svg") no-repeat;
       background-size: 20px 20px;
       width: 20px;
-      height: 20px; }
+      height: 20px;
+      position: absolute;
+      bottom: 250px; }
     footer a.twitter {
       background: url("../images/ic_twitter.svg") no-repeat;
       background-size: 20px 20px;
       width: 20px;
-      height: 20px; }
+      height: 20px;
+      position: absolute;
+      bottom: 200px; }
     footer a.insta {
       background: url("../images/ic_insta.svg") no-repeat;
       background-size: 20px 20px;
       width: 20px;
-      height: 20px; }
+      height: 20px;
+      position: absolute;
+      bottom: 150px; }
     footer a.talk {
       background: url("../images/ic_talk.svg") no-repeat;
       background-size: 20px 20px;
       width: 20px;
-      height: 20px; }
+      height: 20px;
+      position: absolute;
+      bottom: 100px; }
+    footer a.gameper-link {
+      -webkit-transform: rotateZ(-90deg);
+              transform: rotateZ(-90deg);
+      position: absolute;
+      bottom: 30px;
+      left: -32px; }
+      @media (max-width: 991px) {
+        footer a.gameper-link {
+          left: -27px; } }
 
 main {
   display: grid;
   grid-template-columns: 400px 400px;
   gap: 0 68px; }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     main {
       grid-template-columns: 1fr; } }
   main section img {
     width: 100%; }
+  @media (max-width: 991px) {
+    main .right .bitro-app {
+      width: 220px;
+      margin: 0 auto; } }
   main .left {
     -ms-flex-item-align: center;
         align-self: center; }
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       main .left {
-        margin-bottom: 50px; } }
+        margin-bottom: 40px; } }
     main .left h2 {
       font-size: 28px;
       font-weight: 100;
       margin: 40px 0; }
-      @media (max-width: 768px) {
+      @media (max-width: 991px) {
         main .left h2 {
           font-size: 18px;
           margin: 32px 0;
           text-align: center; } }
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       main .left .bitro-logo {
         width: 80%;
         margin: 0 auto; } }
@@ -239,6 +267,19 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 991px) {
+      main .app-link {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center; } }
     main .app-link .ios {
       display: block;
       background: url("../images/download-ios.svg") no-repeat;
@@ -252,3 +293,7 @@ main {
       width: 135px;
       height: 40px;
       margin-left: 24px; }
+      @media (max-width: 991px) {
+        main .app-link .android {
+          margin-left: 0;
+          margin-top: 24px; } }

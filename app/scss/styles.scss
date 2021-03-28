@@ -1,6 +1,13 @@
 @import 'reset';
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
+html,
+body {
+  height: 100%;
+  @media (max-width: 991px) {
+    height: unset;
+  }
+}
 body {
   position: relative;
   font-family: 'NanumSquare', sans-serif;
@@ -10,8 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 32px;
-  @media (max-width: 768px) {
-    padding: 90px 72px;
+  @media (max-width: 991px) {
+    padding: 70px 72px;
   }
 }
 
@@ -23,6 +30,10 @@ body {
   height: 2px;
   background-color: white;
   opacity: 0.5;
+  @media (max-width: 991px) {
+    top: 24px;
+    left: 24px;
+  }
 }
 
 .decor2 {
@@ -33,18 +44,25 @@ body {
   height: 100px;
   background-color: white;
   opacity: 0.5;
+  @media (max-width: 991px) {
+    bottom: 24px;
+    right: 24px;
+  }
 }
 
 footer {
   position: fixed;
   bottom: 32px;
   left: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 200px;
-  @media (max-width: 768px) {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // height: 200px;
+  @media (max-width: 991px) {
     font-size: 14px;
+    bottom: 24px;
+    left: 24px;
+    // bottom: 122px;
   }
   a {
     display: block;
@@ -55,27 +73,41 @@ footer {
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      position: absolute;
+      bottom: 250px;
     }
     &.twitter {
       background: url('../images/ic_twitter.svg') no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      position: absolute;
+      bottom: 200px;
     }
     &.insta {
       background: url('../images/ic_insta.svg') no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      position: absolute;
+      bottom: 150px;
     }
     &.talk {
       background: url('../images/ic_talk.svg') no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
+      position: absolute;
+      bottom: 100px;
     }
     &.gameper-link {
-      // transform: rotateZ(-90deg);
+      transform: rotateZ(-90deg);
+      position: absolute;
+      bottom: 30px;
+      left: -32px;
+      @media (max-width: 991px) {
+        left: -27px;
+      }
     }
   }
 }
@@ -85,7 +117,7 @@ main {
   display: grid;
   grid-template-columns: 400px 400px;
   gap: 0 68px;
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     grid-template-columns: 1fr;
   }
   section {
@@ -93,24 +125,32 @@ main {
       width: 100%;
     }
   }
+  .right {
+    .bitro-app {
+      @media (max-width: 991px) {
+        width: 220px;
+        margin: 0 auto;
+      }
+    }
+  }
   .left {
     align-self: center;
-    @media (max-width: 768px) {
-      margin-bottom: 50px;
+    @media (max-width: 991px) {
+      margin-bottom: 40px;
       // text-align: center;
     }
     h2 {
       font-size: 28px;
       font-weight: 100;
       margin: 40px 0;
-      @media (max-width: 768px) {
+      @media (max-width: 991px) {
         font-size: 18px;
         margin: 32px 0;
         text-align: center;
       }
     }
     .bitro-logo {
-      @media (max-width: 768px) {
+      @media (max-width: 991px) {
         width: 80%;
         margin: 0 auto;
       }
@@ -118,6 +158,12 @@ main {
   }
   .app-link {
     display: flex;
+    @media (max-width: 991px) {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
     .ios {
       display: block;
       background: url('../images/download-ios.svg') no-repeat;
@@ -132,6 +178,10 @@ main {
       width: 135px;
       height: 40px;
       margin-left: 24px;
+      @media (max-width: 991px) {
+        margin-left: 0;
+        margin-top: 24px;
+      }
     }
   }
 }
