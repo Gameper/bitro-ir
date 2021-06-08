@@ -109,6 +109,16 @@ footer {
         left: -27px;
       }
     }
+    &.privacy-link {
+      transform: rotateZ(-90deg);
+      position: absolute;
+      bottom: 350px;
+      width:max-content;
+      left: -47px;
+      @media (max-width: 991px) {
+        left: -27px;
+      }
+    }
   }
 }
 

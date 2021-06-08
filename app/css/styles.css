@@ -230,6 +230,18 @@ footer {
       @media (max-width: 991px) {
         footer a.gameper-link {
           left: -27px; } }
+    footer a.privacy-link {
+      -webkit-transform: rotateZ(-90deg);
+              transform: rotateZ(-90deg);
+      position: absolute;
+      bottom: 350px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      left: -47px; }
+      @media (max-width: 991px) {
+        footer a.privacy-link {
+          left: -27px; } }
 
 main {
   display: grid;
