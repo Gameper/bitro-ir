@@ -241,7 +241,7 @@ footer {
       left: -47px; }
       @media (max-width: 991px) {
         footer a.privacy-link {
-          left: -27px; } }
+          left: -40px; } }
 
 main {
   display: grid;
